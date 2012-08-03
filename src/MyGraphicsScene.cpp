@@ -23,7 +23,7 @@ void MyGraphicsScene::mousePressEvent( QGraphicsSceneMouseEvent* mouseEvent ){
 
 void MyGraphicsScene::mouseMoveEvent( QGraphicsSceneMouseEvent* mouseEvent ){
 	if(selected != NULL){
-		selected->_setPos(QPointF(mouseEvent->scenePos().rx(),mouseEvent->scenePos().ry()));
+		selected->_setPos(QPointF(mouseEvent->scenePos().rx()-370,-mouseEvent->scenePos().ry()+270));
 	}
 }
 
